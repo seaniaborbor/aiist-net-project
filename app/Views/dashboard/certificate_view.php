@@ -32,7 +32,7 @@
                             <span><small>Certificate Code:</small></span>
                             <span><small><?=$certificate[0]['certId']?></small></span>
                         </p>
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=<?=$certificate[0]['certId']?>" 
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=<?=base_url().'vfy/'.$certificate[0]['certId']?>" 
                           class="img-fluid  w-100" >
                     </div>
                 </div>

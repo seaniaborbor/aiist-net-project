@@ -102,7 +102,7 @@ class CertificateController extends BaseController
         return view('dashboard/certificate', $data);
     }
 
-    // view certificate 
+    // view certificate info on the admin dashboard
     public function view_certificate($cert_id){
         // highlight the career nave py passing the page name 
         $data['passedLink'] = "certificates";
@@ -115,6 +115,24 @@ class CertificateController extends BaseController
         return view('dashboard/certificate_view', $data);
 
     }
+
+    // verify certificate
+    public function vfy($certificate_serial){
+
+        $data['request'] = [];
+
+        $courses = new CourseModel();
+        $certificateModel  = new CertificateModel();
+
+        if($certificate_serial == 'v'){
+            $data['request'] = "verify_certificate";
+        }else{
+            $data['certificate'] = $certificateModel->where("certId", $certificate_serial)->find();
+        }
+
+        return view("public/verify_certificate", $data);
+    }
+
 
     
 }

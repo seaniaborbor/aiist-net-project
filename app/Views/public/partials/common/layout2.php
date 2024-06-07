@@ -166,7 +166,7 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="/about">About AIIST</a>
                                         <a class="dropdown-item" href="/contact">Contacts</a>
-                                        <a class="dropdown-item" href="/vfy">Verify Certificate</a>
+                                        <a class="dropdown-item" href="/vfy/v">Verify Certificate</a>
                                     </div>
                                 </li>
                                 <li class="d-none d-lg-block">
@@ -230,9 +230,9 @@
                     <div class="single-footer-widget footer_2">
                         <h4 data-aos="fade-up" data-aos-duration="2000">Contact us</h4>
                         <div data-aos="fade-up" data-aos-duration="2000" class="contact_info">
-                            <p><span> Address :</span> Hath of it fly signs bear be one blessed after </p>
-                            <p><span> Phone :</span> +2 36 265 (8060)</p>
-                            <p><span> Email : </span>info@colorlib.com </p>
+                            <p><span> Address :</span> Afropolitan Building, Benson & Newport Streets, Monrovia, Liberia. </p>
+                            <p><span> Phone :</span> +231-778-469-404</p>
+                            <p><span> Email : </span>info@aiist.net </p>
                         </div>
                     </div>
                 </div>

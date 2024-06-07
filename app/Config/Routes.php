@@ -24,6 +24,10 @@ $routes->post("/subscribe", "SubscribersController::subscribe");
 $routes->get('career_path/', 'CareerController::view_career_paths');
 $routes->get('career_path/career_path_details/(:any)', 'CareerController::view_career_path_detail/$1');
 
+// if visitor request to verify certificate
+$routes->get('/vfy/(:any)', 'CertificateController::vfy/$1');
+
+
 $routes->get('/auth', 'AuthController::index');
 $routes->post('/auth', 'AuthController::index');
 $routes->get('/logout', 'AuthController::logout');
