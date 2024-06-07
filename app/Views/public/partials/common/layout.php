@@ -61,6 +61,8 @@
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="/about">About AIIST</a>
                                         <a class="dropdown-item" href="/contact">Contacts</a>
+                                        <a class="dropdown-item" href="/vfy">Verify Certificate</a>
+
                                     </div>
                                 </li>
                                 <li class="d-none d-lg-block">

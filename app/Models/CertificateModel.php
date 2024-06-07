@@ -7,6 +7,13 @@ use CodeIgniter\Model;
 class CertificateModel extends Model
 {
     protected $table            = 'certificates';
-    protected $primaryKey       = 'certId';
-    protected $allowedFields    = ['dateIssued','course','certificateType', 'duration', 'studentName'];
+    protected $allowedFields    = [
+        
+    'certId', 
+    'dateIssued',
+    'course',
+    'certificateType',
+    'duration',
+    'studentName'
+    ];
 }

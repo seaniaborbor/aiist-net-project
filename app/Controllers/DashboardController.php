@@ -26,7 +26,7 @@ class DashboardController extends BaseController
         $blog = new BlogModel();
         $visitors = new VisitorsModel();
         $certificate = new CertificateModel();
-        $subscribers = new SubscribersController();
+        $subscribers = new SubscrsiberModel();
         
     
         $data = [
@@ -34,9 +34,9 @@ class DashboardController extends BaseController
             'courses' => $courses->findAll(),
             'testimonials' => $testimonials->findAll(),
             'team' => $team->findAll(),
-            'visitors' => $visitors->visitors(),
-            'blog' => $blog->visitors(),
-            'certificate' => $certificate->visitors(),
+            'visitors' => $visitors->findAll(),
+            'blog' => $blog->findAll(),
+            'certificate' => $certificate->findAll(),
             'subscribers' => $subscribers->findAll(),
         ];
         $data['passedLink'] = "dashboard";

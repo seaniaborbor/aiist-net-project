@@ -159,6 +159,7 @@ function activate($pageName, $passedLink){
                     <a href="<?=base_url('/dashboard/course')?>" class="nav-item nav-link <?php activate('course', $passedLink)?>"><i class="fa fa-keyboard me-2"></i>Courses</a>
                     <a href="<?=base_url('/dashboard/blog')?>" class="nav-item nav-link <?php activate('blog', $passedLink)?>"><i class="fa fa-book me-2"></i>Blog</a>
                     <a href="<?=base_url('/dashboard/testimonials')?>" class="nav-item nav-link <?php activate('testimonials', $passedLink)?>"><i class="fa fa-quote-right me-2"></i>Testimonials</a>
+                    <a href="<?=base_url('/dashboard/certificates')?>" class="nav-item nav-link <?php activate('certificates', $passedLink)?>"><i class="fa fa-certificate me-2"></i>Certificate</a>
                     <a href="<?=base_url('/dashboard/team')?>" class="nav-item nav-link <?php activate('team', $passedLink)?>"><i class="fa fa-users me-2"></i>Team/Users</a>
 
                 </div>

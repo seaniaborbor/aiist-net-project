@@ -70,7 +70,8 @@ $routes->post('/dashboard/edit/testimonials/(:any)', 'TestimonialsController::ed
 $routes->get('/dashboard/delete/testimonials/(:any)', 'TestimonialsController::delete/$1');
 
 // orders routes
-$routes->get('/dashboard/orders/(:any)', 'PaymentController::view_orders/$1');
-$routes->get('/dashboard/delete/orders/(:any)', 'PaymentController::delete/$1');
+$routes->get('/dashboard/certificates/', 'CertificateController::index');
+$routes->get('dashboard/view-certificate/(:any)', 'CertificateController::view_certificate/$1');
+$routes->post('/dashboard/certificates', 'CertificateController::index');
 
 });

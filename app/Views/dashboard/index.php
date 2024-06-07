@@ -18,10 +18,10 @@
 </div>
 <div class="col-sm-6 col-xl-3">
     <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
-        <i class="fa fa-users fa-3x text-primary"></i>
+        <i class="far fa-file-code fa-3x text-primary"></i>
         <div class="ms-3">
             <p class="mb-2">Career Paths</p>
-            <h6 class="mb-0"><?=count($customer)?></h6>
+            <h6 class="mb-0"><?=count($career)?></h6>
         </div>
     </div>
 </div>
@@ -88,38 +88,11 @@
             <!-- Widgets Start -->
         <div class="container-fluid pt-4 px-4">
             <div class="row">
-            <div class="col-md-4">
-                <div class="card bg-light border-0">
-                    <div class="card-body">
-                        <h6 class="text-primary">Team / users Log </h6>
-                        <table class="table table-hover table-stripped">
-                            <thead>
-                                <tr class="fw-bold text-dark">
-                                    <th scope="col">User Name</th>
-                                    <th scope="col">Profile</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php foreach($team as $teamMem) :?>
-                                    <tr>
-                                        <th scope="row"><?=$teamMem['fullName']?></th>
-                                        <td><a  href="<?=base_url('/dashboard/edit/team/'.$teamMem['id'])?>" class="">
-                                            <img src="<?=base_url('uploads/'.$teamMem['profileImg'])?>" width="40" height="40" 
-                                            class="rounded-circle" alt="">
-                                        </a></td>
-                                    </tr>
-                                <?php endforeach;?>
-                            </tbody>
-                        </table>
-                        </table>
-                    </div>
-                </div>
-            </div>
-                <div class="col-md-8 mt-3">
+                <div class="col-md-12 mt-3">
                     <div class="card bg-light border-0">
                         <div class="card-body">
                             <h6 class="text-primary">Blog Post Log</h6>
-                            <table class="table-stripped table table-hover">
+                            <table class="table-stripped table table-hover" id="example">
                                 <thead>
                                     <tr class="fw-bold text-dark">
                                         <th scope="col">Blog Title</th>
